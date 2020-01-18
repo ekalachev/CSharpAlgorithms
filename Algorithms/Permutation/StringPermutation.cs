@@ -21,10 +21,10 @@ public class StringPermutation
         {
             for (int i = 0; i < strLength; i++)
             {
-                var iStr = prefix + str[i];
-                var iPrefix = str.Substring(0, i) + str.Substring(i + 1, strLength - (i + 1));
+                var iPrefix = prefix + str[i];
+                var iStr = str.Substring(0, i) + str.Substring(i + 1, strLength - (i + 1));
 
-                Permutate(iStr, iPrefix, result);
+                Permutate(iPrefix, iStr, result);
             }
         }
     }
