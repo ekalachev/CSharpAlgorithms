@@ -36,7 +36,7 @@ public class StringPermutation
     /// <returns>Count of all permutations of the shorter string within the longer one</returns>
     public int GetPermutationCount(string str, string text)
     {
-        var permutations = new HashSet<string>(Permutate(str));
+        var possiblePermutations = new HashSet<string>(Permutate(str));
 
         var permutationCount = 0;
 
@@ -44,7 +44,7 @@ public class StringPermutation
         {
             var current = text.Substring(i, str.Length);
 
-            if (permutations.Contains(current))
+            if (possiblePermutations.Contains(current))
                 permutationCount++;
         }
 
