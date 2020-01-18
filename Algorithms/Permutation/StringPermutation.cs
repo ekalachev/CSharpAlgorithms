@@ -30,10 +30,8 @@ public class StringPermutation
     }
 
     /// <summary>
-    /// Given a smaller string 'str' and a bigger string 'text'. Design an algorithm
-    /// to find all permutations of the shorter string within the longer one. 
+    /// Count of all permutations of the shorter string 'str' within the longer one 'text'
     /// </summary>
-    /// <returns>Count of all permutations of the shorter string within the longer one</returns>
     public int GetPermutationCount(string str, string text)
     {
         var possiblePermutations = new HashSet<string>(Permutate(str));
