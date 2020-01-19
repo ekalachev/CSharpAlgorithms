@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Algorithms.Permutation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Algorithms.Tests.Permutation
